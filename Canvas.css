@@ -1,0 +1,96 @@
+/*This CSS makes the overlay controls easier to see and increases the transparency of the gradeient overlay. The default gradient overlay makes white slides look grey.*/
+
+/*make chapters button outline darker*/
+
+.sideBarContainerReminder {
+	text-shadow: 0px 0px 4px #000000 !important;
+}
+
+.sideBarContainerReminder.left {
+	text-shadow: 0px 0px 4px #000000 !important;
+}
+
+/*make right controls outline darker*/
+
+.controlBarBtn {
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.9) !important;
+}
+
+/*remove blur filter effect from controls*/
+
+.displayControlGroup.ds-blur > .controlBarBtn {
+	filter: blur(0px) !important;
+}
+
+
+/*make right controls hover color grey instead of white*/
+
+.controlBarBtn:not(.dualScreen-separator):hover {
+	text-shadow: 0px 0px 10px #545454 !important;
+}
+
+/*make overlay color more transparent when using dual stream and chapters plugin*/
+
+.controlBarShadow {
+	background: rgba(0,0,0,0.05) !important; 
+	background: -moz-linear-gradient(top,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 20%,rgba(0,0,0,0.01) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); 
+	 background: -webkit-gradient(left top,left bottom,color-stop(0%,rgba(0,0,0,0.01)),color-stop(20%,rgba(0,0,0,0.01)),color-stop(40%,rgba(0,0,0,0.01)),color-stop(60%,rgba(0,0,0,0)),color-stop(80%,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,0))); 
+	 background: -webkit-linear-gradient(top,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 20%,rgba(0,0,0,0.01) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); 
+	 background: -o-linear-gradient(top,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 20%,rgba(0,0,0,0.01) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); 
+	 background: -ms-linear-gradient(top,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 20%,rgba(0,0,0,0.01) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to bottom,rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.01) 20%,rgba(0,0,0,0.01) 40%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%) !important;
+}
+
+/*Set mouse cursor style to pointer when hovering over stream selection. Default cursor is crosshair.*/
+
+.ds-stream.ui-draggable {
+	cursor: pointer !important;
+}
+
+/*This CSS displays text in the Media Gallery description field and keeps the text aligned with the Media Gallery wrapper.*/
+
+html #channel-desc {
+        display: block !important;
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+		}
+
+@media (max-width: 979px) and (min-width: 768px){
+html #channel-desc {
+	display: block !important;
+	width: 724px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+}
+
+@media (max-width: 767px){
+html #channel-desc {
+display: block !important;
+	width: auto;
+	margin-right: 12px;
+	margin-left: 12px;
+	}
+
+}
+
+@media (max-width: 480px){
+html #channel-desc {
+display: block !important;
+	margin-left: 0;
+	margin-right: 0;
+	}
+
+}
+
+
+/* original media gallery description fix from Kaltura
+
+html #channel-desc{
+display: block !important;
+}
+
+*/
+
